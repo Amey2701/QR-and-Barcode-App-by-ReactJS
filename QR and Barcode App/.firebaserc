@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "ameyqrgapp",
+    "build": "anjqrbarproj"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #98ff98, #20b2aa); /* Gradient from Mint Green to Light Sea Green */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+center {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 40px; /* Increased padding for more space */
+  text-align: center;
+  max-width: 90%; /* Increased width */
+  width: 100%;
+  max-width: 600px; /* Maximum width for larger screens */
+  height: auto; /* Auto height based on content */
+  min-height: 400px; /* Minimum height to ensure enough space */
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 28px; /* Larger font size for the header */
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px; /* Slightly larger padding */
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 16px; /* Larger font size for the input */
+}
+
+input[type="text"]:focus {
+  border-color: #0056b3;
+}
+
+input[type="submit"],
+button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 12px 24px; /* Larger padding for buttons */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px; /* Larger font size for buttons */
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #0056b3;
+}
+
+button.clear-button {
+  background-color: #dc3545;
+}
+
+button.clear-button:hover {
+  background-color: #c82333;
+}
+
+img {
+  max-width: 100%;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-container button {
+    width: 100%;
+    max-width: 300px; /* Adjust to fit mobile screens */
+  }
+}
